@@ -1,0 +1,33 @@
+python 安装seleum模块
+
+python3安装HTMLTestRunner模块
+
+mac版本
+1、在下面的网址下载HTMLTestRunner.py
+2、将其python3的lib--》python3文件下
+http://tungwaiyip.info/software/HTMLTestRunner.html
+具体操作
+1、终端输入：python3
+import sys
+sys.path
+2、然后找到这个路径
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7
+3、将HTMLTestRunner.py文件拷贝到如下目录后，pycharm中就可以import HTMLTestRunner
+
+mac的教程
+https://www.cnblogs.com/yrxns/p/9857812.html
+
+windows版本
+方法一：
+1、在下面的网址下载HTMLTestRunner.py
+2、将其python3的Script
+
+方法二/：
+
+放在这路径下python3/Script
+
+在cmd命令下进入C:/python3/Script
+pip install html_testRunner-1.2-py2.py3-none-any.whl
+安装完成即可
+官网下载地址
+https://pypi.org/project/html-testRunner/#files

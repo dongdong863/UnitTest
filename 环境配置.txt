@@ -29,5 +29,5 @@ windows版本
 在cmd命令下进入C:/python3/Script
 pip install html_testRunner-1.2-py2.py3-none-any.whl
 安装完成即可
-官网下载地址
+官方下载地址
 https://pypi.org/project/html-testRunner/#files

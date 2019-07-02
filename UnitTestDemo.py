@@ -19,13 +19,25 @@ class BaiduIdeTest():
         self.driver = webdriver.Chrmoe()
         self.driver.imlicitly_wait(30)#打开网址确保节点完全加载出来，可写可不写
         self.base_url = 'https://www.baidu.com'
+
     def test_baidu_ide(self):#测试用例
         driver = self.driver
-        driver.get(self.base_url)#ger方式发送一个url站点
+        driver.get(self.base_url)#get方式发送一个url站点
         #元素定位，xpath_selenium_
+        driver.find_element_by_id('kw').clear#通过Id去定位，并且清除搜索框里面的内容
+        driver.find_element_by_id('kw').send_keys("糗事百科")#模拟键盘输入
+        driver.find_element_by_id('su').click()#点击百度一下
+        time.sleep(3)#时间停顿3s
+        self.assertEqual('糗事百科——百度搜索',driver.title)
 
 
-        pass
+
+
+
+
     def teardown(self):#资源释放工作，--一些临时用例清理等等
-        pass
-        pass
+        self.driver.quit()
+
+if __name__ == '__main__':#判断文件程序入口
+    testsuite = unittest.TestSuite()#构造测试套件
+

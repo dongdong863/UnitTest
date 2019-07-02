@@ -31,3 +31,5 @@ pip install html_testRunner-1.2-py2.py3-none-any.whl
 安装完成即可
 官方下载地址
 https://pypi.org/project/html-testRunner/#files
+
+#94 540  633 645  770  776

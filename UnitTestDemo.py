@@ -41,4 +41,10 @@ class BaiduIdeTest():
 
 if __name__ == '__main__':#判断文件程序入口
     testsuite = unittest.TestSuite()#构造测试套件
-
+    testsuite.addTest(BaiduIdeTest("test_baidu_ide"))#把测试用例添加进测试套件中
+    fp = open('./result.html','wb')#定义测试报告存放的路径
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp,
+                                           title='自动化测试报告',
+                                            description='用例执行情况:')
+    runner.run(testsuite)#运行
+    fp.close()#关闭测试报告

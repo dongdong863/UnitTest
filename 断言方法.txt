@@ -1,0 +1,8 @@
+assertEquart(a,b)      a==b
+assertNotEquart(a,b)   a!=b
+assertTrue(x)          bool(x) is True
+assertFalse(x)         bool(x) is Flase
+assertlsNone(x)        x is None
+assertlsNotNone(x)     x is not None
+assertln(a,b)          a in b 
+assertNotln(a,b)       a not in b 

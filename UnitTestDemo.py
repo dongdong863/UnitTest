@@ -1,6 +1,7 @@
 #打开百度，搜索糗事百科，断言，生成测试报告
 
 
+class BaiduIdeTest():
 
 from selenium import webdriver#导入webdriver包
 import HTMLTestRunner #生成测试报告

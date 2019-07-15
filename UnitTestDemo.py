@@ -23,7 +23,7 @@ class BaiduIdeTest():
         driver = self.driver
         driver.get(self.base_url)  # get方式发送一个url站点
         # 元素定位，xpath_selenium_
-        driver.find_element_by_id('kw').clear  # 通过Id去定位，并且清除搜索框里面的内容
+        driver.find_element_by_id('kw').clear()  # 通过Id去定位，并且清除搜索框里面的内容
         driver.find_element_by_id('kw').send_keys("糗事百科")  # 模拟键盘输入
         driver.find_element_by_id('su').click()  # 点击百度一下
         time.sleep(3)  # 时间停顿3s
@@ -33,9 +33,9 @@ class BaiduIdeTest():
         self.driver.quit()
 
 
-if __name__ == '__main__':  # 判断文件程序入口
-    testsuite = unittest.TestSuite()  # 构造测试套件
-    testsuite.addTest(BaiduIdeTest("test_baidu_ide"))  # 把测试用例添加进测试套件中
+if __name__ == "__main__":  # 判断文件程序入口
+    testsuit = unittest.TestSuite()   # 构造测试套件
+    testsuit.addTest(BaiduIdeTest("test_baidu_ide"))  # 把测试用例添加进测试套件中
     fp = open('./result.html', 'wb')  # 定义测试报告存放的路径
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='自动化测试报告', description='用例执行情况:')
     
